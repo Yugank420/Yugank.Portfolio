@@ -8,66 +8,78 @@
 body{
   margin:0;
   font-family: Arial, sans-serif;
-  background:#fff7f8;
-  color:#333;
+  background:#0f1115;
+  color:#eaeaea;
 }
 
+/* HEADER */
 header{
   text-align:center;
-  padding:40px;
-  font-size:28px;
+  padding:50px 20px;
+}
+
+header h1{
+  font-size:34px;
   letter-spacing:2px;
 }
 
+header p{
+  color:#999;
+}
+
+/* SECTIONS */
 section{
-  padding:20px 40px;
+  padding:30px 50px;
 }
 
 h2{
+  color:#4da3ff;
   margin-bottom:20px;
   font-size:22px;
-  color:#c46a6a;
 }
 
 /* GRID */
 .grid{
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap:20px;
 }
 
 /* CARD */
 .card{
-  background:white;
-  border-radius:20px;
+  background:#171a21;
+  border-radius:18px;
   padding:15px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
   transition:0.3s;
+  border:1px solid #222;
 }
 
 .card:hover{
-  transform:translateY(-5px);
+  transform:translateY(-6px);
+  border-color:#4da3ff;
 }
 
 .img{
   height:140px;
-  border-radius:15px;
-  background:#eee;
+  border-radius:12px;
+  background:#222;
   display:flex;
   align-items:center;
   justify-content:center;
+  color:#777;
   font-weight:bold;
-  color:#999;
   margin-bottom:10px;
 }
 
 .tag{
-  font-size:12px;
-  background:#ffe3e3;
+  font-size:11px;
+  background:#1f2a38;
+  color:#4da3ff;
   display:inline-block;
-  padding:5px 10px;
-  border-radius:20px;
-  margin-bottom:10px;
+  padding:4px 10px;
+  border-radius:15px;
+  margin-bottom:8px;
 }
 
 .title{
@@ -77,15 +89,13 @@ h2{
 
 .desc{
   font-size:13px;
+  color:#bbb;
   margin:10px 0;
-  color:#666;
 }
 
 .btn{
-  display:inline-block;
-  margin-top:10px;
   font-size:12px;
-  color:#c46a6a;
+  color:#4da3ff;
   text-decoration:none;
   font-weight:bold;
 }
@@ -95,7 +105,8 @@ h2{
 <body>
 
 <header>
-YUGANK KUMAR - PORTFOLIO
+<h1>YUGANK KUMAR</h1>
+<p>Portfolio PCTO & Attività Scolastiche</p>
 </header>
 
 <!-- ANNO TERZO -->
@@ -108,7 +119,7 @@ YUGANK KUMAR - PORTFOLIO
   <div class="img">PCTO</div>
   <div class="tag">Formazione</div>
   <div class="title">Introduzione al PCTO</div>
-  <div class="desc">Studio delle basi del percorso scuola-lavoro e delle competenze trasversali.</div>
+  <div class="desc">Studio del percorso scuola-lavoro e delle competenze trasversali.</div>
   <a class="btn">ESPLORA →</a>
 </div>
 
@@ -116,23 +127,23 @@ YUGANK KUMAR - PORTFOLIO
   <div class="img">SICUREZZA</div>
   <div class="tag">Sicurezza</div>
   <div class="title">Prevenzione e sicurezza</div>
-  <div class="desc">Formazione sulle regole di sicurezza nei luoghi di lavoro.</div>
+  <div class="desc">Norme di sicurezza negli ambienti di lavoro e prevenzione rischi.</div>
   <a class="btn">ESPLORA →</a>
 </div>
 
 <div class="card">
-  <div class="img">BUS</div>
+  <div class="img">BUSCONNECT</div>
   <div class="tag">PCTO</div>
   <div class="title">BusConnect</div>
-  <div class="desc">Percorso formativo su strumenti digitali e collaborazione online.</div>
+  <div class="desc">Percorso su strumenti digitali e collaborazione online.</div>
   <a class="btn">ESPLORA →</a>
 </div>
 
 <div class="card">
-  <div class="img">HW</div>
-  <div class="tag">Hardware</div>
+  <div class="img">HARDWARE</div>
+  <div class="tag">Tecnico</div>
   <div class="title">Monta & Smonta PC</div>
-  <div class="desc">Esperienza pratica sul montaggio e smontaggio di un computer desktop.</div>
+  <div class="desc">Esperienza pratica su componenti hardware e assemblaggio PC.</div>
   <a class="btn">ESPLORA →</a>
 </div>
 
@@ -149,15 +160,15 @@ YUGANK KUMAR - PORTFOLIO
   <div class="img">CONFINDUSTRIA</div>
   <div class="tag">Soft Skills</div>
   <div class="title">Confindustria - Mi Presento</div>
-  <div class="desc">Orientamento al mondo del lavoro e sviluppo delle competenze trasversali.</div>
+  <div class="desc">Orientamento al mondo del lavoro e competenze professionali.</div>
   <a class="btn">ESPLORA →</a>
 </div>
 
 <div class="card">
   <div class="img">CNA</div>
-  <div class="tag">Business Logic</div>
-  <div class="title">CNA - Tecnopolo Reggio Emilia</div>
-  <div class="desc">Analisi delle realtà aziendali e del funzionamento del mondo lavorativo.</div>
+  <div class="tag">Business</div>
+  <div class="title">CNA - Tecnopolo RE</div>
+  <div class="desc">Analisi delle imprese e funzionamento del sistema lavorativo.</div>
   <a class="btn">ESPLORA →</a>
 </div>
 
@@ -165,7 +176,7 @@ YUGANK KUMAR - PORTFOLIO
   <div class="img">POLARITY</div>
   <div class="tag">IT</div>
   <div class="title">Polarity</div>
-  <div class="desc">Incontro con professionisti IT e introduzione al settore tecnologico.</div>
+  <div class="desc">Incontro con professionisti del settore informatico.</div>
   <a class="btn">ESPLORA →</a>
 </div>
 
@@ -173,7 +184,7 @@ YUGANK KUMAR - PORTFOLIO
   <div class="img">PROJECT</div>
   <div class="tag">Project Work</div>
   <div class="title">Ascolto Project Work</div>
-  <div class="desc">Presentazione dei progetti realizzati dagli studenti delle classi quinte.</div>
+  <div class="desc">Presentazione dei progetti sviluppati dalle classi quinte.</div>
   <a class="btn">ESPLORA →</a>
 </div>
 
@@ -187,10 +198,10 @@ YUGANK KUMAR - PORTFOLIO
 <div class="grid">
 
 <div class="card">
-  <div class="img">COMING SOON</div>
-  <div class="tag">In costruzione</div>
-  <div class="title">Progetti in sviluppo</div>
-  <div class="desc">Le attività del quinto anno sono attualmente in fase di completamento.</div>
+  <div class="img">IN COSTRUZIONE</div>
+  <div class="tag">Coming soon</div>
+  <div class="title">Attività Quinto Anno</div>
+  <div class="desc">Le attività del quinto anno saranno aggiornate prossimamente.</div>
   <a class="btn">IN ARRIVO →</a>
 </div>
 
