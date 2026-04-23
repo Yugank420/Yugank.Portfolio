@@ -12,13 +12,14 @@ body{
   color:#eaeaea;
 }
 
+/* HEADER */
 header{
   text-align:center;
-  padding:40px;
+  padding:40px 20px;
 }
 
 header h1{
-  font-size:32px;
+  font-size:34px;
   letter-spacing:2px;
 }
 
@@ -49,16 +50,22 @@ h2{
   border-radius:16px;
   padding:15px;
   box-shadow:0 10px 25px rgba(0,0,0,0.4);
-  transition:0.3s;
   border:1px solid #222;
   cursor:pointer;
+
+  transition: all 0.35s ease;
+  overflow:hidden;
+  max-height:260px;
 }
 
-.card:hover{
-  transform:translateY(-5px);
+/* CARD APERTA */
+.card.expanded{
+  max-height:520px;
   border-color:#4da3ff;
+  transform:scale(1.02);
 }
 
+/* IMG */
 .img{
   height:120px;
   border-radius:12px;
@@ -71,6 +78,7 @@ h2{
   margin-bottom:10px;
 }
 
+/* TAG */
 .tag{
   font-size:11px;
   background:#1f2a38;
@@ -81,6 +89,7 @@ h2{
   margin-bottom:8px;
 }
 
+/* TEXT */
 .title{
   font-size:16px;
   font-weight:bold;
@@ -92,33 +101,28 @@ h2{
   margin:10px 0;
 }
 
-/* EXTRA (NASCOSTO) */
+/* EXTRA TEXT */
 .extra{
-  display:none;
   font-size:12px;
   margin-top:10px;
   color:#ddd;
-  line-height:1.4;
-}
 
-/* CARD APERTA */
-.card.expanded{
-  transform:scale(1.03);
-  border-color:#4da3ff;
+  opacity:0;
+  transform: translateY(-10px);
+  transition:0.3s;
 }
 
 .card.expanded .extra{
-  display:block;
+  opacity:1;
+  transform: translateY(0);
 }
 
-/* BOTTONI */
+/* BUTTON */
 .btn{
-  display:inline-block;
   margin-top:10px;
   font-size:12px;
   color:#4da3ff;
   font-weight:bold;
-  cursor:pointer;
 }
 </style>
 </head>
@@ -140,26 +144,18 @@ h2{
   <div class="img">PCTO</div>
   <div class="tag">Formazione</div>
   <div class="title">Introduzione al PCTO</div>
-  <div class="desc">Studio delle basi del percorso scuola-lavoro.</div>
-
-  <div class="extra">
-    Attività introduttiva per comprendere il funzionamento del PCTO e lo sviluppo delle competenze trasversali utili al mondo del lavoro.
-  </div>
-
-  <div class="btn">ESPLORA →</div>
+  <div class="desc">Percorso scuola-lavoro e competenze base.</div>
+  <div class="extra">Studio del sistema PCTO e sviluppo delle competenze trasversali fondamentali.</div>
+  <div class="btn">ESPLORA</div>
 </div>
 
 <div class="card" onclick="toggle(this)">
-  <div class="img">SICUREZZA</div>
-  <div class="tag">Sicurezza</div>
-  <div class="title">Prevenzione e sicurezza</div>
-  <div class="desc">Norme di sicurezza nei luoghi di lavoro.</div>
-
-  <div class="extra">
-    Formazione sulle regole fondamentali di sicurezza e prevenzione nei contesti lavorativi e scolastici.
-  </div>
-
-  <div class="btn">ESPLORA →</div>
+  <div class="img">HW</div>
+  <div class="tag">Tecnico</div>
+  <div class="title">Hardware PC</div>
+  <div class="desc">Montaggio e componenti PC.</div>
+  <div class="extra">Esperienza pratica su assemblaggio e smontaggio computer desktop.</div>
+  <div class="btn">ESPLORA</div>
 </div>
 
 </div>
@@ -172,42 +168,30 @@ h2{
 <div class="grid">
 
 <div class="card" onclick="toggle(this)">
-  <div class="img">CONFINDUSTRIA</div>
+  <div class="img">CONF</div>
   <div class="tag">Soft Skills</div>
-  <div class="title">Confindustria - Mi Presento</div>
-  <div class="desc">Orientamento al mondo del lavoro.</div>
-
-  <div class="extra">
-    Incontro formativo con aziende per comprendere dinamiche professionali e competenze richieste nel mercato del lavoro.
-  </div>
-
-  <div class="btn">ESPLORA →</div>
+  <div class="title">Confindustria</div>
+  <div class="desc">Orientamento lavoro.</div>
+  <div class="extra">Incontro con aziende e analisi del mondo professionale.</div>
+  <div class="btn">ESPLORA</div>
 </div>
 
 <div class="card" onclick="toggle(this)">
   <div class="img">CNA</div>
   <div class="tag">Business</div>
-  <div class="title">CNA - Tecnopolo</div>
-  <div class="desc">Analisi delle imprese e del lavoro.</div>
-
-  <div class="extra">
-    Approfondimento sul funzionamento delle aziende e delle realtà produttive del territorio.
-  </div>
-
-  <div class="btn">ESPLORA →</div>
+  <div class="title">CNA Tecnopolo</div>
+  <div class="desc">Aziende e territorio.</div>
+  <div class="extra">Studio delle realtà produttive e del funzionamento delle imprese locali.</div>
+  <div class="btn">ESPLORA</div>
 </div>
 
 <div class="card" onclick="toggle(this)">
   <div class="img">POLARITY</div>
   <div class="tag">IT</div>
   <div class="title">Polarity</div>
-  <div class="desc">Incontro con professionisti IT.</div>
-
-  <div class="extra">
-    Attività di orientamento nel settore informatico con esperti del mondo digitale.
-  </div>
-
-  <div class="btn">ESPLORA →</div>
+  <div class="desc">Settore informatico.</div>
+  <div class="extra">Incontro con esperti del settore IT e tecnologie digitali.</div>
+  <div class="btn">ESPLORA</div>
 </div>
 
 </div>
@@ -220,16 +204,12 @@ h2{
 <div class="grid">
 
 <div class="card" onclick="toggle(this)">
-  <div class="img">COMING SOON</div>
+  <div class="img">SOON</div>
   <div class="tag">In costruzione</div>
-  <div class="title">Attività Quinto Anno</div>
-  <div class="desc">Progetti in fase di completamento.</div>
-
-  <div class="extra">
-    Le attività del quinto anno verranno aggiornate con progetti finali e percorsi di orientamento post-diploma.
-  </div>
-
-  <div class="btn">ESPLORA →</div>
+  <div class="title">Progetti finali</div>
+  <div class="desc">Attività in sviluppo.</div>
+  <div class="extra">Le attività del quinto anno saranno aggiornate con progetti finali e orientamento post-diploma.</div>
+  <div class="btn">ESPLORA</div>
 </div>
 
 </div>
