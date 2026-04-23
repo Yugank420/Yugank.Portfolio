@@ -1,114 +1,209 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <title>Yugank Kumar | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Yugank Kumar | Portfolio</title>
+
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#fff7f8;
+  color:#333;
+}
+
+header{
+  text-align:center;
+  padding:40px;
+  font-size:28px;
+  letter-spacing:2px;
+}
+
+section{
+  padding:20px 40px;
+}
+
+h2{
+  margin-bottom:20px;
+  font-size:22px;
+  color:#c46a6a;
+}
+
+/* GRID CARDS */
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap:20px;
+}
+
+/* CARD */
+.card{
+  background:white;
+  border-radius:20px;
+  padding:15px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.img{
+  height:140px;
+  border-radius:15px;
+  background:#eee;
+  margin-bottom:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+  color:#999;
+}
+
+.tag{
+  font-size:12px;
+  background:#ffe3e3;
+  display:inline-block;
+  padding:5px 10px;
+  border-radius:20px;
+  margin-bottom:10px;
+}
+
+.title{
+  font-size:16px;
+  font-weight:bold;
+}
+
+.desc{
+  font-size:13px;
+  margin:10px 0;
+  color:#666;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:10px;
+  font-size:12px;
+  color:#c46a6a;
+  text-decoration:none;
+  font-weight:bold;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <h1>Yugank Kumar</h1>
-  <p>Creative Developer & Designer</p>
+YUGANK KUMAR - PORTFOLIO
 </header>
 
-<nav>
-  <a href="#about">Chi sono</a>
-  <a href="#skills">Competenze</a>
-  <a href="#projects">Progetti</a>
-  <a href="#services">Servizi</a>
-  <a href="#contact">Contatti</a>
-</nav>
+<!-- ANNO TERZO -->
+<section>
+<h2>Anno Terzo</h2>
 
-<section id="about">
-  <h2>Chi sono</h2>
-  <p>
-    Sono Yugank Kumar, sviluppatore creativo con una forte passione per il web design moderno.
-    Mi piace creare siti veloci, eleganti e intuitivi, curando sia la parte estetica che funzionale.
-  </p>
+<div class="grid">
+
+<div class="card">
+  <div class="img">PCTO</div>
+  <div class="tag">Formazione</div>
+  <div class="title">Introduzione al PCTO</div>
+  <div class="desc">Studio delle basi del percorso scuola-lavoro e delle competenze trasversali.</div>
+  <a class="btn">ESPLORA →</a>
+</div>
+
+<div class="card">
+  <div class="img">SICUREZZA</div>
+  <div class="tag">Sicurezza</div>
+  <div class="title">Sicurezza nei luoghi di lavoro</div>
+  <div class="desc">Formazione sulle regole di sicurezza e prevenzione negli ambienti professionali.</div>
+  <a class="btn">ESPLORA →</a>
+</div>
+
+<div class="card">
+  <div class="img">BUS</div>
+  <div class="tag">PCTO</div>
+  <div class="title">BusConnect</div>
+  <div class="desc">Percorso educativo su strumenti digitali e collaborazione online.</div>
+  <a class="btn">ESPLORA →</a>
+</div>
+
+<div class="card">
+  <div class="img">HW</div>
+  <div class="tag">Hardware</div>
+  <div class="title">Monta & Smonta PC</div>
+  <div class="desc">Esperienza pratica sul montaggio e smontaggio di componenti hardware.</div>
+  <a class="btn">ESPLORA →</a>
+</div>
+
+</div>
 </section>
 
-<section id="skills">
-  <h2>Competenze</h2>
-  <div class="project">
-    <h3>Frontend Development</h3>
-    <p>Sviluppo interfacce moderne utilizzando HTML, CSS e JavaScript con attenzione ai dettagli.</p>
-  </div>
+<!-- ANNO QUARTO -->
+<section>
+<h2>Anno Quarto</h2>
 
-  <div class="project">
-    <h3>UI/UX Design</h3>
-    <p>Progettazione di esperienze utente semplici, intuitive e visivamente accattivanti.</p>
-  </div>
+<div class="grid">
 
-  <div class="project">
-    <h3>Responsive Design</h3>
-    <p>Creazione di siti perfettamente adattabili a smartphone, tablet e desktop.</p>
-  </div>
+<div class="card">
+  <div class="img">WEB</div>
+  <div class="tag">Informatica</div>
+  <div class="title">Sviluppo Web</div>
+  <div class="desc">Creazione di siti web con HTML, CSS e introduzione a JavaScript.</div>
+  <a class="btn">ESPLORA →</a>
+</div>
+
+<div class="card">
+  <div class="img">UI</div>
+  <div class="tag">Design</div>
+  <div class="title">UI/UX Design</div>
+  <div class="desc">Progettazione di interfacce moderne e intuitive per l’utente.</div>
+  <a class="btn">ESPLORA →</a>
+</div>
+
+<div class="card">
+  <div class="img">APP</div>
+  <div class="tag">Progetto</div>
+  <div class="title">Web App</div>
+  <div class="desc">Realizzazione di applicazioni web dinamiche e interattive.</div>
+  <a class="btn">ESPLORA →</a>
+</div>
+
+</div>
 </section>
 
-<section id="projects">
-  <h2>Progetti</h2>
+<!-- ANNO QUINTO -->
+<section>
+<h2>Anno Quinto</h2>
 
-  <div class="project">
-    <h3>Portfolio Website</h3>
-    <p>
-      Realizzazione di un sito personale moderno per mostrare competenze e lavori,
-      con design minimal e animazioni leggere.
-    </p>
-  </div>
+<div class="grid">
 
-  <div class="project">
-    <h3>Landing Page</h3>
-    <p>
-      Creazione di una landing page ottimizzata per conversioni, con layout chiaro
-      e struttura orientata all'utente.
-    </p>
-  </div>
+<div class="card">
+  <div class="img">FINAL</div>
+  <div class="tag">Progetto</div>
+  <div class="title">Progetto Finale</div>
+  <div class="desc">Sviluppo completo di un progetto integrato con tutte le competenze.</div>
+  <a class="btn">ESPLORA →</a>
+</div>
 
-  <div class="project">
-    <h3>Web Application</h3>
-    <p>
-      Sviluppo di una web app dinamica per gestione dati e interazioni utente in tempo reale.
-    </p>
-  </div>
+<div class="card">
+  <div class="img">OPT</div>
+  <div class="tag">Ottimizzazione</div>
+  <div class="title">Ottimizzazione Web</div>
+  <div class="desc">Miglioramento prestazioni e velocità dei siti web.</div>
+  <a class="btn">ESPLORA →</a>
+</div>
 
+<div class="card">
+  <div class="img">FUT</div>
+  <div class="tag">Futuro</div>
+  <div class="title">Preparazione al lavoro</div>
+  <div class="desc">Competenze finali per il mondo del lavoro e studi futuri.</div>
+  <a class="btn">ESPLORA →</a>
+</div>
+
+</div>
 </section>
 
-<section id="services">
-  <h2>Servizi</h2>
-
-  <div class="project">
-    <h3>Sviluppo Siti Web</h3>
-    <p>
-      Creazione di siti web professionali, veloci e ottimizzati per ogni dispositivo.
-    </p>
-  </div>
-
-  <div class="project">
-    <h3>Restyling Siti</h3>
-    <p>
-      Miglioramento grafico e funzionale di siti esistenti per renderli più moderni ed efficaci.
-    </p>
-  </div>
-
-  <div class="project">
-    <h3>Consulenza</h3>
-    <p>
-      Supporto nella progettazione e sviluppo di progetti digitali, dall'idea alla realizzazione.
-    </p>
-  </div>
-
-</section>
-
-<section id="contact">
-  <h2>Contatti</h2>
-  <p>Email: yugank@example.com</p>
-</section>
-
-<footer>
-  <p>© 2026 Yugank Kumar</p>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
