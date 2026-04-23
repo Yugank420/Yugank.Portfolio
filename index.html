@@ -24,7 +24,6 @@ header h1{
 
 header p{
   color:#999;
-  margin:5px 0;
 }
 
 header .desc{
@@ -35,7 +34,6 @@ header .desc{
   line-height:1.5;
 }
 
-/* SEZIONI */
 section{
   padding:20px 40px;
 }
@@ -45,29 +43,25 @@ h2{
   margin-bottom:20px;
 }
 
-/* GRID */
 .grid{
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap:20px;
 }
 
-/* CARD */
 .card{
   background:#171a21;
   border-radius:16px;
   padding:15px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.4);
   border:1px solid #222;
   cursor:pointer;
-
-  transition: all 0.35s ease;
+  transition:0.3s;
   overflow:hidden;
   max-height:260px;
 }
 
 .card.expanded{
-  max-height:520px;
+  max-height:500px;
   border-color:#4da3ff;
   transform:scale(1.02);
 }
@@ -132,16 +126,14 @@ h2{
 
 <header>
 <h1>YUGANK KUMAR</h1>
-<p>Studente ITIS Bus Pascal - Reggio Emilia</p>
+<p>ITIS Bus Pascal - Reggio Emilia</p>
 
 <div class="desc">
-Sono uno studente dell’ITIS Bus Pascal di Reggio Emilia, indirizzo Informatica.  
-Pratico baseball e mi appassiona il mondo della tecnologia e dello sviluppo software.  
-In questo portfolio ho raccolto tutte le attività svolte durante il mio percorso scolastico PCTO.
+Studente di Informatica. Pratico baseball e sono interessato allo sviluppo software e alle tecnologie digitali.  
+Qui sono raccolte le attività PCTO svolte durante il percorso scolastico.
 </div>
 </header>
 
-<!-- ANNO TERZO -->
 <section>
 <h2>Anno Terzo</h2>
 
@@ -150,18 +142,18 @@ In questo portfolio ho raccolto tutte le attività svolte durante il mio percors
 <div class="card" onclick="toggle(this)">
   <div class="img">PCTO</div>
   <div class="tag">Formazione</div>
-  <div class="title">Introduzione al PCTO</div>
-  <div class="desc">Percorso scuola-lavoro e competenze base.</div>
-  <div class="extra">Introduzione al sistema PCTO e sviluppo delle competenze trasversali fondamentali.</div>
+  <div class="title">Introduzione PCTO</div>
+  <div class="desc">Percorso scuola-lavoro.</div>
+  <div class="extra">Introduzione al PCTO e sviluppo delle competenze base.</div>
   <div class="btn">ESPLORA</div>
 </div>
 
 <div class="card" onclick="toggle(this)">
   <div class="img">SICUREZZA</div>
   <div class="tag">Normativa</div>
-  <div class="title">Sicurezza nei luoghi di lavoro</div>
-  <div class="desc">Regole e prevenzione.</div>
-  <div class="extra">Formazione sulle norme di sicurezza e prevenzione nei contesti scolastici e lavorativi.</div>
+  <div class="title">Sicurezza lavoro</div>
+  <div class="desc">Regole base di sicurezza.</div>
+  <div class="extra">Formazione sulle norme di sicurezza nei contesti scolastici e lavorativi.</div>
   <div class="btn">ESPLORA</div>
 </div>
 
@@ -170,34 +162,33 @@ In questo portfolio ho raccolto tutte le attività svolte durante il mio percors
   <div class="tag">Digitale</div>
   <div class="title">BusConnect</div>
   <div class="desc">Strumenti digitali.</div>
-  <div class="extra">Attività su strumenti digitali e collaborazione online.</div>
+  <div class="extra">Uso di strumenti digitali per la collaborazione scolastica.</div>
   <div class="btn">ESPLORA</div>
 </div>
 
 <div class="card" onclick="toggle(this)">
   <div class="img">HARDWARE</div>
   <div class="tag">Tecnico</div>
-  <div class="title">Monta e Smonta PC</div>
-  <div class="desc">Componenti hardware.</div>
-  <div class="extra">Esperienza pratica su assemblaggio e smontaggio PC.</div>
+  <div class="title">Hardware PC</div>
+  <div class="desc">Assemblaggio computer.</div>
+  <div class="extra">Attività pratica di montaggio e analisi componenti PC.</div>
   <div class="btn">ESPLORA</div>
 </div>
 
 </div>
 </section>
 
-<!-- ANNO QUARTO -->
 <section>
 <h2>Anno Quarto</h2>
 
 <div class="grid">
 
 <div class="card" onclick="toggle(this)">
-  <div class="img">CONFINDUSTRIA</div>
+  <div class="img">CONF</div>
   <div class="tag">Soft Skills</div>
-  <div class="title">Confindustria - Mi Presento</div>
-  <div class="desc">Orientamento al lavoro.</div>
-  <div class="extra">Incontro con aziende e mondo del lavoro.</div>
+  <div class="title">Confindustria</div>
+  <div class="desc">Orientamento lavoro.</div>
+  <div class="extra">Incontro con aziende e mondo professionale.</div>
   <div class="btn">ESPLORA</div>
 </div>
 
@@ -205,35 +196,34 @@ In questo portfolio ho raccolto tutte le attività svolte durante il mio percors
   <div class="img">CNA</div>
   <div class="tag">Business</div>
   <div class="title">CNA Tecnopolo</div>
-  <div class="desc">Imprese e territorio.</div>
-  <div class="extra">Studio delle realtà produttive locali.</div>
+  <div class="desc">Imprese locali.</div>
+  <div class="extra">Studio delle realtà produttive del territorio.</div>
   <div class="btn">ESPLORA</div>
 </div>
 
 <div class="card" onclick="toggle(this)">
-  <div class="img">POLARITY</div>
+  <div class="img">POL</div>
   <div class="tag">IT</div>
   <div class="title">Polarity</div>
   <div class="desc">Settore informatico.</div>
-  <div class="extra">Incontro con professionisti IT.</div>
+  <div class="extra">Incontro con professionisti del settore IT.</div>
   <div class="btn">ESPLORA</div>
 </div>
 
 </div>
 </section>
 
-<!-- ANNO QUINTO -->
 <section>
 <h2>Anno Quinto</h2>
 
 <div class="grid">
 
 <div class="card" onclick="toggle(this)">
-  <div class="img">COMING SOON</div>
+  <div class="img">SOON</div>
   <div class="tag">In costruzione</div>
-  <div class="title">Attività Quinto Anno</div>
-  <div class="desc">Progetti finali in sviluppo.</div>
-  <div class="extra">Le attività saranno aggiornate con progetti finali e orientamento post-diploma.</div>
+  <div class="title">Progetti finali</div>
+  <div class="desc">Attività in aggiornamento.</div>
+  <div class="extra">Le attività del quinto anno saranno aggiunte in seguito.</div>
   <div class="btn">ESPLORA</div>
 </div>
 
